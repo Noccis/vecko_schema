@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mondayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/monday"
+        android:text="Måndag"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/tuesdayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Tisdag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mondayButton" />
+
+    <Button
+        android:id="@+id/wednesdayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Onsdag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuesdayButton" />
+
+    <Button
+        android:id="@+id/thursdayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Torsdag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wednesdayButton" />
+
+    <Button
+        android:id="@+id/fridayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Fredag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thursdayButton" />
+
+    <Button
+        android:id="@+id/saturdayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Lördag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fridayButton" />
+
+    <Button
+        android:id="@+id/syndayButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Söndag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturdayButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
