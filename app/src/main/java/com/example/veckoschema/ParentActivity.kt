@@ -18,6 +18,6 @@ class ParentActivity : AppCompatActivity() {
         imageRecycleView.layoutManager = LinearLayoutManager(this)
 
         imageRecycleView.adapter = ImageRecycleAdapter(this, DataManager.images)
-        
+
     }
 }

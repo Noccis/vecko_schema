@@ -27,6 +27,7 @@ class ImageRecycleAdapter (val context: Context, val images: List<Image>) : Recy
         holder.imageView.setImageResource(image.imageId)
         holder.imageText.text = image.imageText
         holder.checkBox.isChecked = image.done
+        holder.deleteButton.visibility = View.GONE
 
     }
 
