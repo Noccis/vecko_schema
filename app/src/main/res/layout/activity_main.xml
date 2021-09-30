@@ -10,11 +10,13 @@
         android:id="@+id/mondayButton"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
         android:background="@color/monday"
+        android:onClick="startMondayActivity"
         android:text="Måndag"
         android:textColor="@color/black"
+        app:backgroundTint="@color/monday"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
@@ -24,6 +26,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Tisdag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/tuesday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mondayButton" />
@@ -33,6 +37,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Onsdag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/wednesday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tuesdayButton" />
@@ -42,6 +48,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Torsdag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/thrusday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wednesdayButton" />
@@ -51,6 +59,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Fredag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/friday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thursdayButton" />
@@ -60,6 +70,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Lördag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/saturday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fridayButton" />
@@ -69,6 +81,8 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:text="Söndag"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/sunday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saturdayButton" />
