@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VeckoSchema">
         <activity
+            android:name=".SundayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SaturdayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FridayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThursdayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WednesdayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TuesdayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MondayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InputImagesActivity"
+            android:exported="true" />
+        <activity
             android:name=".ParentActivity"
             android:exported="true" />
         <activity

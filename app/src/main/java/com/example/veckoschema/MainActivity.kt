@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startMondayActivity(view: View) {
-        val intent = Intent(this, ParentActivity::class.java)
+        val intent = Intent(this, MondayActivity::class.java)
         startActivity(intent)
     }
 }
