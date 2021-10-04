@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageRecycleAdapter (val context: Context, val images: List<ActionPicture>) : RecyclerView.Adapter<ImageRecycleAdapter.ViewHolder>(){
+class ImageRecycleAdapter (val context: Context, val weekday: WeekDay) : RecyclerView.Adapter<ImageRecycleAdapter.ViewHolder>(){
 
 
     val layoutInflater = LayoutInflater.from(context)
@@ -22,7 +22,7 @@ class ImageRecycleAdapter (val context: Context, val images: List<ActionPicture>
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val image = images[position]
+        val image = weekday.actionsPictureList[position]
 
         holder.imageView.setImageResource(image.imageId)
         holder.imageText.text = image.imageText
@@ -32,7 +32,7 @@ class ImageRecycleAdapter (val context: Context, val images: List<ActionPicture>
     }
 
     override fun getItemCount(): Int {      // Kan också skriva = images.size efter ()
-        return images.size
+        return weekday.actionsPictureList.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

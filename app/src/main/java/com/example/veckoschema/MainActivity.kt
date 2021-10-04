@@ -9,6 +9,10 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+val monday = WeekDay("Monday", @colors.monday)
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     fun startMondayActivity(view: View) {
         val intent = Intent(this, WeekdaySchemeActivity::class.java)
+        intent.putExtra("weekday", monday)
         startActivity(intent)
     }
 }
