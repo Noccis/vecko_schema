@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageRecycleAdapter (val context: Context, val images: List<Image>) : RecyclerView.Adapter<ImageRecycleAdapter.ViewHolder>(){
+class ImageRecycleAdapter (val context: Context, val images: List<ActionPicture>) : RecyclerView.Adapter<ImageRecycleAdapter.ViewHolder>(){
 
 
     val layoutInflater = LayoutInflater.from(context)
