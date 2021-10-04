@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-open class ParentActivity : AppCompatActivity() {
+open class WeekdaySchemeActivity : AppCompatActivity() {
 
     lateinit var imageRecycleView: RecyclerView
 
