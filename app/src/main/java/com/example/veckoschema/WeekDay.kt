@@ -1,11 +1,20 @@
 package com.example.veckoschema
 
-import android.graphics.Color
-import android.graphics.Picture
+class WeekDay(val name: String, val color: Int) {
 
-class WeekDay(val name: String,  val color: Color) {
+    init {
+        var pictureList = mutableListOf<ActionPicture>()
 
-    var actionsPictureList = mutableListOf<Picture>()
+        val clothes = ActionPicture(R.drawable.klader)
+        val brushTeeth = ActionPicture(R.drawable.borstatander)
+        val breakfast = ActionPicture(R.drawable.frukost)
+
+        pictureList.add(clothes)
+        pictureList.add(brushTeeth)
+        pictureList.add(breakfast)
+
+    }
+
 
 
 

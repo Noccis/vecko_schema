@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-val monday = WeekDay("Monday", @colors.monday)
-
+ var weekDayInput = "default"
 
 
 
@@ -24,7 +22,8 @@ val monday = WeekDay("Monday", @colors.monday)
 
     fun startMondayActivity(view: View) {
         val intent = Intent(this, WeekdaySchemeActivity::class.java)
-        intent.putExtra("weekday", monday)
+        weekDayInput = "monday"
+        intent.putExtra("weekday", weekDayInput )
         startActivity(intent)
     }
 }

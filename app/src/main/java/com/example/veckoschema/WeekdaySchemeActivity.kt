@@ -13,11 +13,13 @@ open class WeekdaySchemeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_parent)
 
+       var weekdayInput = intent.getStringExtra("weekday")
         imageRecycleView = findViewById(R.id.imageRecyclerView)
 
         imageRecycleView.layoutManager = LinearLayoutManager(this)
 
-        imageRecycleView.adapter = ImageRecycleAdapter(this, DataManager.images)
+        if (weekdayInput == "monday")
+        imageRecycleView.adapter = ImageRecycleAdapter(this, monday)
 
     }
 }

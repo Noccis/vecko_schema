@@ -22,7 +22,7 @@ class ImageRecycleAdapter (val context: Context, val weekday: WeekDay) : Recycle
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val image = weekday.actionsPictureList[position]
+        val image = weekday.pictureList[position]
 
         holder.imageView.setImageResource(image.imageId)
         holder.imageText.text = image.imageText
@@ -32,7 +32,7 @@ class ImageRecycleAdapter (val context: Context, val weekday: WeekDay) : Recycle
     }
 
     override fun getItemCount(): Int {      // Kan också skriva = images.size efter ()
-        return weekday.actionsPictureList.size
+        return weekday.
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
